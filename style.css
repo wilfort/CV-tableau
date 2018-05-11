@@ -1,0 +1,153 @@
+html
+    {
+          box-sizing: border-box;
+    }
+
+
+*, *:before, *:after
+    {
+          box-sizing: inherit;
+          padding: 0; margin: 0;
+    }
+
+
+html, body
+    {
+          display: block;
+          height: 100%;width: 100%;
+          overflow: hidden;
+    }
+
+
+ul,li, a
+    {
+          margin: 0; padding: 0;
+          list-style: none;
+          text-decoration: none;
+    }
+
+body
+{
+            background-color: #333;
+}
+
+h1
+{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color:blue;
+}
+
+h3
+{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+h5
+{
+  padding: 0px;
+  margin: 0px;
+  color:blue;
+}
+h6
+{
+  padding: 0px;
+  margin: 0px;
+}
+table{
+  width: 100%;
+}
+
+#form1{width: 50%;  vertical-align:top;}
+#form2{width: 25%;  vertical-align:top;}
+#form3{width: 75%;  vertical-align:top;}
+.main
+    {
+          position:absolute;
+          height: 100%;
+          top :0px;
+          left: 0px;
+          padding: 30px 60px;
+          overflow: auto;
+    }
+
+.main-header
+    {
+          height: 30px;
+
+    }
+
+
+.main-container
+    {
+          height: auto;
+          font-size: 22px;
+          background-color:#f1f1f1;
+    }
+
+progress
+{
+  width: 100%;
+}
+
+.main-footer
+    {
+          height: 30px;
+          text-align: center;
+          background-color: lightblue;
+
+    }
+    @media only screen and (max-width: 600px)
+    {
+      .main, .main-header, .main-container, .main-footer
+          {
+                display: inline-block;
+                max-width: 600px;
+                width: 100%;
+          }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px)
+    {
+      .main, .main-header, .main-container, .main-footer
+          {
+                display: inline-block;
+                min-width: 600px;
+                max-width: 768px;
+                width: 100%;
+          }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    {
+      .main, .main-header, .main-container, .main-footer
+          {
+                display: block;
+                min-width: 768px;
+                max-width: 992px;
+                width: 100%;
+          }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)and (max-width: 1200px)
+    {
+      .main, .main-header, .main-container, .main-footer
+          {
+                display: block;
+                min-width: 992px;
+                max-width: 1200px;
+                width: 100%;
+          }
+    }
+
+    @media only screen and (min-width: 1200px)
+        {
+          .main, .main-header, .main-container, .main-footer
+              {
+                    display: block;
+                    width: 100%;
+              }
+            }
